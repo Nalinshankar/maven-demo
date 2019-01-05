@@ -1,6 +1,6 @@
 # Maven Demo
 
-This repo is for using maven plugind
+This repo is for using maven plugins
 
 
 
