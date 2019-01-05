@@ -21,5 +21,23 @@
             <version>3.8.1</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <extensions>
+            <extension>
+                <groupId>io.packagecloud.maven.wagon</groupId>
+                <artifactId>maven-packagecloud-wagon</artifactId>
+                <version>0.0.6</version>
+            </extension>
+        </extensions>
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>packagecloud.release</id>
+            <url>packagecloud+https://packagecloud.io/ximanta/release</url>
+        </repository>
+        <snapshotRepository>
+            <id>packagecloud.snapshot</id>
+            <url>packagecloud+https://packagecloud.io/ximanta/snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
