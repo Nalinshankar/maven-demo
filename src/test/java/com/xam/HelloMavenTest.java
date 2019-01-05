@@ -18,9 +18,5 @@ public class HelloMavenTest {
         assertEquals("Hello Maven", actual);
     }
 
-    @Test
-    public void reetUserWithStringUtils() {
-        String actual=helloMaven.greetUserWithStringUtils();
-        assertEquals("Hello maven", actual);
-    }
+
 }

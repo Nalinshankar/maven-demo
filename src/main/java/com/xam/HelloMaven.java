@@ -1,12 +1,12 @@
 package com.xam;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class HelloMaven {
+    public static void main(String[] args){
+        HelloMaven helloMaven=new HelloMaven();
+        System.out.println(helloMaven.greetUser());
+    }
     public String greetUser(){
         return "Hello Maven";
     }
-    public String greetUserWithStringUtils(){
-        return (StringUtils.capitalize("hello maven"));
-    }
+
 }
