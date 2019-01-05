@@ -1,26 +1,16 @@
 package com.xam;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 public class HelloMavenTest {
-    private HelloMaven helloMaven;
-    @Before
-    public void setUp(){
-           helloMaven=new HelloMaven();
-    }
-    @Test
+
     public void testGreetUser() {
-
+        HelloMaven helloMaven = new HelloMaven();
         String actual=helloMaven.greetUser();
-        assertEquals("Hello Maven", actual);
+       assert "Hello Maven".equals(actual);
     }
 
-    @Test
-    public void reetUserWithStringUtils() {
+    public void testGreetUserWithStringUtils() {
+        HelloMaven helloMaven = new HelloMaven();
         String actual=helloMaven.greetUserWithStringUtils();
-        assertEquals("Hello maven", actual);
+        assert "Hello maven".equals(actual);
     }
 }
